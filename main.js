@@ -13,7 +13,14 @@ const init = () => {
 }
 
 const createLiElements = () => {
-    console.log("klik");
+
+    for(let i = 0; i < 10; i++){
+        const li = document.createElement('li');
+        li.textContent = 'Element nr ${1++}';
+        document.querySelector('ul').appendChild(li);
+
+    }
+
 }
 
 init()
